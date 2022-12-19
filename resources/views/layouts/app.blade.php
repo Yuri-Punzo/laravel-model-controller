@@ -17,9 +17,9 @@
 
 <body>
 
-    <header>
-        @include("partials.header")
-    </header>
+
+    @include("partials.header")
+
     <!-- /header -->
 
     <main>
@@ -27,9 +27,8 @@
     </main>
     <!-- /main -->
 
-    <footer>
-        @include("partials.footer")
-    </footer>
+
+    @include("partials.footer")
     <!-- /footer -->
 
 </body>

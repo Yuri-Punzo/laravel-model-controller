@@ -18,5 +18,25 @@ Stilare il layout nei dettagli con Sass
 @extends("layouts.app")
 
 @section("content")
-<h1>main HOME</h1>
+<section class="bg-primary py-5">
+    <div class="container">
+        <div class="row row-cols-md-5 g-4">
+            @foreach($movies as $movie)
+            <div class="col-auto">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/300/200" class="p-1">
+                    <div class="card-body">
+                        <h2>{{$movie->title}}</h2>
+                        <h5>{{$movie->original_title}}</h5>
+                        <div>Nationality: {{$movie->nationality}}</div>
+                        <div>Date: {{$movie->date}}</div>
+                        <div>Vote: {{$movie->vote}}</div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
 @endsection
