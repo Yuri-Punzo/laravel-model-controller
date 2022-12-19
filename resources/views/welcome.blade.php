@@ -18,5 +18,5 @@ Stilare il layout nei dettagli con Sass
 @extends("layouts.app")
 
 @section("content")
-<h1>main</h1>
+<h1>main HOME</h1>
 @endsection
